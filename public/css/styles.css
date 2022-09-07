@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;;
+}
+header {
+    background-color: #eac926;
+    padding: 20px;
+}
+.header-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header p{
+    width: 50%;
+    text-align: center;
+}
+.logo {
+    width: 50%;
+}
+header h2{
+    text-align: center;
+    font-size: 17px;
+    width: 100%;
+}
+.burguer-menu{
+    background-color: #03264c;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+.burguer-menu a{
+    color: #ffffff;
+}
+.burguer-menu:visited{
+    color: #ffffff;
+}
+header nav{
+    display: none;
+}
+header nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+header nav ul a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 17px;
+}
+
+img{
+    max-width: 100%;
+}
+footer{
+    font-size: 12px;
+    text-align: center;
+    background-color: white;
+    max-width: 100vw;
+    margin: 5px;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer i{
+    font-size: 2em;
+    color: #03264c;
+    margin-bottom: 10px;
+
+}
+.titular{
+    font-size: 24px;
+}
+.precio{
+    font-size: 18px;
+    width: 30%;
+}
+.descDesc{
+    font-size: 16px;
+    width: 70%;
+}
+.descDescri{
+    font-size: 16px;
+    display: none;
+}
+.descDescri:hover{
+    display: block;
+}
+main{
+    max-width: 90vw;
+}
+.secMain{
+    display: flex;
+    justify-content: center;
+}
+.divProd{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+}
+.divProdText{
+    border-top: 1px solid #ebebeb;
+    display: flex;
+
+}
+.textVerde{
+    color: #29b93e;
+}
+.textOscuro{
+    color: #666b6e;
+}
+.articulo-icon{
+    display: block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    margin: -15px;
+    margin-left: 80%;
+    background-color: #ebebeb;
+}
+.formF{
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input, button{
+    margin: 10px;
+}
+button:hover{
+    background-color: #0022aa;
+    color: white;
+}
+footer i:hover{
+    color: #29b93e;
+}
+@media (min-width: 768px){
+    .header-top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-top h2{
+        max-width: 33%;
+        text-align: right;
+    }
+    header p{
+        width: 33%;
+        text-align: center;
+    }
+    .logo{
+        width: 33%;
+    }
+    .burguer-menu{
+        display: none;
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav ul{
+        display: flex;
+    }
+    header nav ul li{
+        margin: 0px 5px;
+    }
+    .descDescri{
+        display: inline-block;
+    }
+    .flexProd{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .divProd{
+        box-shadow: 5px 5px 15px #666b6e;
+        width: 45%;  
+    }
+    .formF{
+        width: 600px;
+    }
+    .justi{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+@media (min-width: 1200px){
+    .header-top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-top, header nav{
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+    }
+    .header-top h2{
+        max-width: 33%;
+        text-align: right;
+        font-size: 19px;
+    }
+    header p{
+        width: 33%;
+        text-align: center;
+    }
+    .logo{
+        width: 33%;
+    }
+    header nav ul li{
+        margin: 0px 10px;
+    }
+    header nav ul li a{
+        font-size: 19px;
+    }
+    header nav{
+        margin-top: 40px;
+    }
+    .descDescri{
+        display: inline-block;
+    }
+    .divProd{
+        box-shadow: 5px 5px 15px #666b6e;
+    }
+    .flexProd{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .divProd{
+        box-shadow: 5px 5px 15px #666b6e;
+        width: 20%;  
+    }
+    .inFooter{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .inFooter div{
+        width: 33%;
+    }
+    .copy{
+        margin-top: 50px;
+    }
+    footer{
+        height: 30vh;
+        margin-top: 50px;
+    }
+}
